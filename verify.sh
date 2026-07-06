@@ -6,7 +6,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 BLUE='\033[0;34m'
 
-BASE_URL="http://localhost:8080"
+BASE_URL=${BASE_URL:-"http://localhost:8080"}
 echo -e "${BLUE}=== E2E Integration Verification Suite for Issue Tracker API ===${NC}"
 
 # 1. Register User
